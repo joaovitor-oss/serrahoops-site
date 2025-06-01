@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serra Hoops | Evento de Basquete</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYV6Y7NV76"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XYV6Y7NV76');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><span class="white">SERRA</span> HOOPS</h1>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <a href="#inicio">Início</a>
+                <a href="modalidades.html">Modalidades</a>
+                <a href="contato.html">Contato</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a href="#inicio">Início</a>
+        <a href="modalidades.html">Modalidades</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content container">
+            <h1 class="hero-title"><span class="red">SERRA</span> HOOPS</h1>
+            <p class="hero-description">O maior evento de basquete da região, com competições emocionantes para todos os níveis de habilidade</p>
+            <div class="hero-buttons">
+                
+            </div>
+        </div>
+        <a href="#modalidades" class="scroll-down">↓</a>
+    </section>
+
+   <!-- About Us Section -->
+<section id="sobre" class="modalities">
+    <div class="container">
+        <h2 class="section-title">Sobre o Serra Hoops</h2>
+        <div class="about-text">
+            <p class="section-description">
+                A <strong>Serra Hoops</strong> é a maior organização de basquete da região, dedicada à promoção e realização de eventos que reúnem atletas amadores e profissionais em um ambiente de competição, diversão e inclusão.Nosso principal objetivo é promover o esporte, revelar novos talentos e proporcionar experiências inesquecíveis tanto para os participantes quanto para os espectadores.Com foco no desenvolvimento do basquete, organizamos competições nos formatos 3x3, 5x5 e Dunk Contest, sempre buscando criar uma atmosfera única, emocionante e acessível para todos os amantes da modalidade.
+            </p>
+            <p class="section-description">
+                Realizado anualmente, o evento oferece uma estrutura completa, diversas categorias e modalidades competitivas, além de atrações culturais e gastronômicas para toda a família.
+            </p>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-section">
+                    <h3>Contact Us</h3>
+                    <a href="mailto:Support@SerraHoops.com" class="email-link">Support@SerraHoops.com</a>
+                </div>
+                
+                <div class="social-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                
+                <div class="footer-logo">
+                    <h2><span class="red">SERRA</span> HOOPS</h2>
+                    <p>O maior evento de basquete da região</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Serra Hoops. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const body = document.body;
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+                body.classList.remove('menu-open');
+            });
+        });
+    </script>
+</body>
+</html>
